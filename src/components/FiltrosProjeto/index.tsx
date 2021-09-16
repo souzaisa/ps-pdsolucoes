@@ -20,13 +20,15 @@ export default function FiltrosProjeto() {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef<HTMLDivElement>(null);
   const [selectedRespon, setSelectedRespon] = React.useState(0);
+
+  const [openStatus, setOpenStatus] = React.useState(false);
+  const anchorRefStatus = React.useRef<HTMLDivElement>(null);
   const [selectedStatus, setSelectedStatus] = React.useState(0);
 
 
   const handleClick = () => {
     console.info(`You clicked ${responsaveis[selectedRespon]}`);
   };
-
   const handleMenuItemClick = (
     event: React.MouseEvent<HTMLLIElement, MouseEvent>,
     index: number,
@@ -34,25 +36,35 @@ export default function FiltrosProjeto() {
     setSelectedRespon(index);
     setOpen(false);
   };
-
-  const handleMenuItemClickStatus = (
-    event: React.MouseEvent<HTMLLIElement, MouseEvent>,
-    indexStatus: number,
-  ) => {
-    setSelectedStatus(indexStatus);
-    setOpen(false);
-  };
-
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
   };
-
   const handleClose = (event: React.MouseEvent<Document, MouseEvent>) => {
     if (anchorRef.current && anchorRef.current.contains(event.target as HTMLElement)) {
       return;
     }
 
     setOpen(false);
+  };
+
+  const handleClickStatus = () => {
+    console.info(`You clicked ${status[selectedStatus]}`);
+  };
+  const handleMenuItemClickStatus = (
+    eventStatus: React.MouseEvent<HTMLLIElement, MouseEvent>,
+    indexStatus: number,
+  ) => {
+    setSelectedStatus(indexStatus);
+    setOpenStatus(false);
+  };
+  const handleToggleStatus = () => {
+    setOpenStatus((prevOpen) => !prevOpen);
+  };
+  const handleCloseStatus = (event: React.MouseEvent<Document, MouseEvent>) => {
+    if (anchorRefStatus.current && anchorRefStatus.current.contains(event.target as HTMLElement)) {
+      return;
+    }
+    setOpenStatus(false);
   };
 
   return (
@@ -100,20 +112,20 @@ export default function FiltrosProjeto() {
           )}
         </Popper>
         
-        <ButtonGroup variant="contained" color="primary" ref={anchorRef} aria-label="split button">
-          <Button onClick={handleClick}>{status[selectedStatus]}</Button>
+        <ButtonGroup variant="contained" color="primary" ref={anchorRefStatus} aria-label="split button">
+          <Button onClick={handleClickStatus}>{status[selectedStatus]}</Button>
           <Button
             size="small"
-            aria-controls={open ? 'split-button-menu' : undefined}
-            aria-expanded={open ? 'true' : undefined}
+            aria-controls={openStatus ? 'split-button-menu' : undefined}
+            aria-expanded={openStatus ? 'true' : undefined}
             aria-label="select merge strategy"
             aria-haspopup="menu"
-            onClick={handleToggle}
+            onClick={handleToggleStatus}
           >
             <KeyboardArrowDownIcon />
           </Button>
         </ButtonGroup>
-        <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+        <Popper open={openStatus} anchorEl={anchorRefStatus.current} role={undefined} transition disablePortal>
           {({ TransitionProps, placement }) => (
             <Grow
               {...TransitionProps}
@@ -122,14 +134,14 @@ export default function FiltrosProjeto() {
               }}
             >
               <Paper>
-                <ClickAwayListener onClickAway={handleClose}>
+                <ClickAwayListener onClickAway={handleCloseStatus}>
                   <MenuList id="split-button-menu">
                     {status.map((status, indexStatus) => (
                       <MenuItem
                         key={status}
                         disabled={indexStatus === 0}
                         selected={indexStatus === selectedStatus}
-                        onClick={(event) => handleMenuItemClickStatus(event, indexStatus)}
+                        onClick={(eventStatus) => handleMenuItemClickStatus(eventStatus, indexStatus)}
                       >
                         {status}
                       </MenuItem>

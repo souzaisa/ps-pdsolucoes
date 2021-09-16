@@ -1,0 +1,40 @@
+header{
+    height: 64px;
+    width: 100%;
+    background: #263579;
+    color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.info-header h4{
+    font-weight: 500;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+}
+.icones-header{
+    gap: 1rem;
+}
+.icones-header p{
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.15px;
+}
+.icones-header, .icones-header div button{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.MuiIconButton-root:hover{
+    background-color: transparent;
+}

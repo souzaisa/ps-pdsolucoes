@@ -1,0 +1,10 @@
+.filtrosProjeto div .MuiButtonGroup-root{
+    margin-left: 2rem;
+}
+.filtrosProjeto div .MuiButtonGroup-root button{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    background: #263579;
+    border: none;
+}

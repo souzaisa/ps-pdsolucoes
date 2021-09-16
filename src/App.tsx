@@ -1,6 +1,10 @@
+import Projetos from './pages/Projetos';
+import CustomSeparator from './components/Navegacao'
+
 function App() {
   return (
-    <h1>PD System</h1>
+  <Projetos></Projetos>
+
   );
 }
 

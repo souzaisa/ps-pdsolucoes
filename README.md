@@ -1,6 +1,6 @@
 <h1 align="center">Desafio PD Soluções</h1>
 
-## :clipboard: Tecnologias 
+## :computer: Tecnologias 
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -32,5 +32,5 @@ $ yarn
 # Iniciar o projeto
 $ yarn start
 ```
-:white_check_mark: O app estará disponível no seu browser pelo endereço http://localhost:3000
+O desafio estará disponível no seu browser pelo endereço http://localhost:3000 :dizzy:
 

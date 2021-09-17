@@ -1,12 +1,12 @@
-# Desafio PD Soluções
+<h1 align="center">Desafio PD Soluções</h1>
 
-## Tecnologias 
+## :clipboard: Tecnologias 
 - [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Material-UI](https://mui.com/pt/)
 
-## Como executar
+## :arrow_forward: Como executar
 #### Pré-requisitos
 Antes de começar, você precisará ter instalado o [Node.js](https://nodejs.org/en/) e o [npm](https://docs.npmjs.com/) ou o [yarn](https://yarnpkg.com/getting-started) em sua máquina.
 
@@ -32,5 +32,5 @@ $ yarn
 # Iniciar o projeto
 $ yarn start
 ```
-O app estará disponível no seu browser pelo endereço http://localhost:3000. 
+:white_check_mark: O app estará disponível no seu browser pelo endereço http://localhost:3000
 

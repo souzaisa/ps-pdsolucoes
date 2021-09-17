@@ -2,7 +2,6 @@
 
 ## :computer: Tecnologias 
 - [React](https://reactjs.org)
-- [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Material-UI](https://mui.com/pt/)
 

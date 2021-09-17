@@ -33,8 +33,6 @@ export default function CardProjeto(){
     return (
         <div className="cards">
             {getProjetos()}
-        </div>
-      
+        </div>    
     )
-    
 }

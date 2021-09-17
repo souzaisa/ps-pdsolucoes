@@ -10,6 +10,5 @@ export default [
     { id: 5, nome: 'Refatoração do InControl', descricao:'O projeto consiste em refatorar o InControlO projeto consiste em refatorar o InControlO projeto consiste refatorar o InControO projeto consiste em refatorar o InControlO projeto consiste em refatorar o InControlO projeto consiste refatorar o InControlO projeto consiste em refatorar o InControl, juntamente com os novos requisitos apresentados pelo cliente na última análise.', 
     responsavel: 'Wel', status:'Pausado', color: '#373737' },
     { id: 5, nome: 'Refatoração do InControl', descricao:'O projeto consiste em refatorar o InControlO projeto consiste em refatorar o InControlO projeto consiste refatorar o InControO projeto consiste em refatorar o InControlO projeto consiste em refatorar o InControlO projeto consiste refatorar o InControlO projeto consiste em refatorar o InControl, juntamente com os novos requisitos apresentados pelo cliente na última análise.', 
-    responsavel: 'Wel', status:'Em Progresso', color: '#429335' },
-   
+    responsavel: 'Wel', status:'Em Progresso', color: '#429335' } 
 ]

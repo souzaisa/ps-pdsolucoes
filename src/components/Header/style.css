@@ -5,7 +5,6 @@ header{
     color: #FFFFFF;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
-
 .info-header{
     display: flex;
     align-items: center;
@@ -13,7 +12,6 @@ header{
     height: 100%;
     padding: 0 3rem;
 }
-
 .info-header h4{
     font-weight: 500;
     font-size: 30px;
@@ -34,7 +32,6 @@ header{
     align-items: center;
     color: #FFFFFF;
 }
-
 .MuiIconButton-root:hover{
     background-color: transparent;
 }

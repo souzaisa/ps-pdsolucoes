@@ -154,7 +154,5 @@ export default function FiltrosProjeto() {
         </Popper> 
       </Grid>
     </Grid>
-
-    
   );
 }
